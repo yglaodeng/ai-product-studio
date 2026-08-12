@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "projects": [
+    {
+      "id": "ai-product-studio",
+      "name": "AI Product Studio",
+      "aliases": ["APS", "AI Product Studio"],
+      "path": ".",
+      "description": "管理 AI 协作流程、任务理解、人工确认与受控执行闭环。",
+      "status": "active",
+      "allowedExecutionScopes": ["build"],
+      "documents": {}
+    },
+    {
+      "id": "ai-data-workbench",
+      "name": "AI 数据工作台",
+      "aliases": ["AI 数据工作台", "AI数据工作台", "AI Data Workbench", "AI_DATA_WORKBENCH"],
+      "path": "../ai-data-workbench",
+      "description": "承载 AI 数据工作台的产品设计、架构、代码与测试文件。",
+      "status": "active",
+      "allowedExecutionScopes": ["read_document", "read_only_inspection", "development"],
+      "documents": {
+        "AI_DATA_WORKBENCH_V1_ARCHITECTURE.md": "docs/AI_DATA_WORKBENCH_V1_ARCHITECTURE.md"
+      }
+    }
+  ]
+}

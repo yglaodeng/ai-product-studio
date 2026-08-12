@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["original_message", "authorization_basis", "intent_type", "target_object", "task_generated", "isTask", "needsExecution", "project", "title", "goal", "type", "priority", "executionSuggestion", "acceptanceCriteria", "reason"],
+  "properties": {
+    "original_message": { "type": "string" },
+    "authorization_basis": {
+      "type": "string",
+      "enum": ["explicit_user_instruction", "contextual_user_confirmation", "delegated_task_request", "none"]
+    },
+    "intent_type": {
+      "type": "string",
+      "enum": ["execution_task", "system_rule", "system_validation", "product_discussion", "ordinary_chat"]
+    },
+    "target_object": {
+      "type": "string",
+      "enum": ["codex", "gpt", "aps", "none"]
+    },
+    "task_generated": { "type": "boolean" },
+    "isTask": { "type": "boolean" },
+    "needsExecution": { "type": "boolean" },
+    "project": { "type": "string" },
+    "title": { "type": "string" },
+    "goal": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["development", "bugfix", "design", "research", "testing", "documentation", "operations", "discussion"]
+    },
+    "priority": { "type": "string", "const": "unassigned" },
+    "executionSuggestion": { "type": "string" },
+    "acceptanceCriteria": { "type": "array", "items": { "type": "string" } },
+    "reason": { "type": "string" }
+  }
+}

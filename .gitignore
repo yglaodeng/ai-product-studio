@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+dist/
+data/
+.npm-cache/
+.env
+.env.*
+版本与恢复/
+*.log

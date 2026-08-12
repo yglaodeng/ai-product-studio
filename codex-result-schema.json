@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "summary", "operations", "filesChanged", "verification"],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["completed", "needs_confirmation", "failed"]
+    },
+    "summary": { "type": "string" },
+    "operations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "id", "parentId", "title", "description"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["add_node", "update_node", "delete_node", "move_node"]
+          },
+          "id": { "type": ["string", "null"] },
+          "parentId": { "type": ["string", "null"] },
+          "title": { "type": ["string", "null"] },
+          "description": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "filesChanged": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "verification": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
