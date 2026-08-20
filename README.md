@@ -2,7 +2,18 @@
 
 一个受控的 AI 协作与任务执行原型。它把对话中的任务理解、项目归属、人工确认、Codex 执行、测试结果和回传状态组织在同一条可追踪链路中。
 
+**English:** A local-first, human-in-the-loop AI workflow prototype for task understanding, approval-gated execution, project-scoped automation, testing, and traceable result delivery.
+
+[查看源码](https://github.com/yglaodeng/ai-product-studio) · [提交问题或建议](https://github.com/yglaodeng/ai-product-studio/issues)
+
 ![AI Product Studio 公开项目地图](./docs/product-map.jpg)
+
+## 30 秒了解项目
+
+- **输入：** 对话中的真实任务、项目归属和执行边界
+- **过程：** 先理解并形成草案，经过人工确认后才进入已注册项目执行
+- **输出：** 保留测试结果、执行状态和可追踪的结果回传
+- **当前状态：** 受控本地原型，不公开会话地址、登录态、任务历史和本机路径
 
 ## 核心原则
 
