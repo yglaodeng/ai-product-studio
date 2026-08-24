@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest a human-in-the-loop workflow improvement
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Workflow scenario
+    validations:
+      required: true
+  - type: textarea
+    id: gate
+    attributes:
+      label: Required approval and project boundary
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Expected verification evidence
+    validations:
+      required: true

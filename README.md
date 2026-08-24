@@ -4,7 +4,7 @@
 
 **English:** A local-first, human-in-the-loop AI workflow prototype for task understanding, approval-gated execution, project-scoped automation, testing, and traceable result delivery.
 
-[查看源码](https://github.com/yglaodeng/ai-product-studio) · [提交问题或建议](https://github.com/yglaodeng/ai-product-studio/issues)
+[English documentation](./README.en.md) · [查看源码](https://github.com/yglaodeng/ai-product-studio) · [提交问题或建议](https://github.com/yglaodeng/ai-product-studio/issues)
 
 ![AI Product Studio 公开项目地图](./docs/product-map.jpg)
 
@@ -60,4 +60,4 @@ node scripts/test-writeback.mjs
 
 ## 许可
 
-当前仓库用于公开展示和学习参考，暂未附加开源许可证。
+本项目采用 [MIT License](./LICENSE)。参与前请阅读 [贡献指南](./CONTRIBUTING.md)，计划中的工作见 [Roadmap](./ROADMAP.md)。
