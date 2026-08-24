@@ -1,0 +1,34 @@
+name: Bug report
+description: Report a reproducible workflow or approval-gate problem
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not attach conversation URLs, cookies, tokens, browser state, local paths, or private task history.
+  - type: textarea
+    id: stage
+    attributes:
+      label: Workflow stage
+      description: Task understanding, draft, approval, dispatch, verification, retry, or result delivery.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual result
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Node.js version, and browser
+    validations:
+      required: true
